@@ -1,0 +1,225 @@
+<div class="rules"> <center> <h1> <strong> saytoutu </strong> </h1> </center> <h3 align="center" style="color: white;">
+<style>@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+	.transition, p, ul li i:before, ul li i:after {
+	  transition: all 0.25s ease-in-out;
+	}
+	
+	.flipIn, h1, ul li {
+	  animation: flipdown 0.5s ease both;
+	}
+	
+	.no-select, h2 {
+	  -webkit-tap-highlight-color: transparent;
+	  -webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	  -khtml-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+	
+	html {
+	  width: 100%;
+	  height: 100%;
+	  perspective: 900;
+	  overflow-y: scroll;
+	  background-image: url("http://sebsauvage.net/galerie/photos/Wallpapers/vladstudio.com/vladstudio_where_tahrs_live_2880x1800_signed.jpg");
+	  font-family: "Titillium Web", sans-serif;
+	  color: #52ab98;
+	}
+	
+	body {
+	  min-height: 100%;
+	  display: outline-block;
+	  position: relative;
+	  left: 50%;
+	  margin: 0px 0;
+	  transform: translate(-50%, 0);
+	  box-shadow: 0 10px 0 0 #52ab98 inset;
+	  background-color: #2b6777;
+	  max-width: 100%;
+	  padding: 30px;
+	}
+	@media (max-width: 550px) {
+	  body {
+		box-sizing: border-box;
+		transform: translate(0, 0);
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0;
+		left: 0;
+	  }
+	}
+	
+	.rules h1, h2 {
+	  color: #f2f2f2;
+	}
+	
+	.rules h1 {
+	
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 36px;
+	  line-height: 42px;
+	  letter-spacing: 3px;
+	  font-weight: 100;
+	}
+	.rules h3 {
+	  font-size:80px;
+	  line-height: 80px;
+	  margin: auto;
+	  width: 100%;
+	  font-weight: 300;
+	  letter-spacing: 1px;
+	  display: block;
+	  background-color: #2b6777;
+	  padding: 10px;
+	  height : 100%
+	  cursor: pointer;
+	}
+	.rules h4 {
+	  font-size:2.3rem;
+	  line-height: 80px;
+	  margin: auto;
+	  width: 100%;
+	  font-weight: 30;
+	  letter-spacing: 1px;
+	  display: block;
+	  background-color: #2b6777;
+	  padding: 10px;
+	  height : 100%
+	  cursor: pointer;
+	}
+	.rules p {
+	  color: rgba(255, 255, 255, 0.8);
+	  font-size: 17px;
+	  line-height: 26px;
+	  letter-spacing: 1px;
+	  position: relative;
+	  overflow: hidden;
+	  max-height: 1200px;
+	  opacity: 1;
+	  transform: translate(0, 0);
+	  margin-top: 14px;
+	  z-index: 2;
+	}
+	
+	.rules ul {
+	  list-style: none;
+	  perspective: 900;
+	  padding: 0;
+	  margin: 0;
+	}
+	.rules ul li {
+	  position: relative;
+	  padding: 0;
+	  margin: 0;
+	  padding-bottom: 4px;
+	  padding-top: 18px;
+	  border-top: 1px solid #cf4f4f;
+	}
+	.rules ul li:nth-of-type(1) {
+	  animation-delay: 0.5s;
+	}
+	.rules ul li:nth-of-type(2) {
+	  animation-delay: 0.75s;
+	}
+	.rules ul li:nth-of-type(3) {
+	  animation-delay: 1s;
+	}
+	.rules ul li:last-of-type {
+	  padding-bottom: 0;
+	}
+	.rules ul li i {
+	  position: absolute;
+	  transform: translate(-6px, 0);
+	  margin-top: 16px;
+	  right: 0;
+	}
+	.rules ul li i:before, ul li i:after {
+	  content: "";
+	  position: absolute;
+	  background-color: #cf4f4f;
+	  width: 3px;
+	  height: 9px;
+	}
+	.rules ul li i:before {
+	  transform: translate(-2px, 0) rotate(45deg);
+	}
+	.rules ul li i:after {
+	  transform: translate(2px, 0) rotate(-45deg);
+	}
+	.rules ul li input[type=check] {
+	  position: absolute;
+	  cursor: pointer;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 5;
+	  opacity: 0;
+	}
+	.rules ul li input[type=checkbox]:checked ~ p {
+	  margin-top: 0;
+	  max-height: 0;
+	  opacity: 0;
+	  transform: translate(0, 50%);
+	}
+	.rules ul li input[type=checkbox]:checked ~ i:before {
+	  transform: translate(2px, 0) rotate(45deg);
+	}
+	.rules ul li input[type=checkbox]:checked ~ i:after {
+	  transform: translate(-2px, 0) rotate(-45deg);
+	}
+	
+	@keyframes flipdown {
+	  0% {
+		opacity: 0;
+		transform-origin: top center;
+		transform: rotateX(-90deg);
+	  }
+	  5% {
+		opacity: 1;
+	  }
+	  80% {
+		transform: rotateX(8deg);
+	  }
+	  83% {
+		transform: rotateX(6deg);
+	  }
+	  92% {
+		transform: rotateX(-3deg);
+	  }
+	  100% {
+		transform-origin: top center;
+		transform: rotateX(0deg);
+	  }
+	}
+	
+	.ewlink {
+	  text-decoration: none;
+	  color: #ff6873;
+	}</style>
+    <h4 style="color: #f2f2f2; ">1. In Confession You are not allowed to write any abusive words.
+    </h4>
+
+    <h4 style="color: #f2f2f2;">2. We should not mention any Professor or any University authority.</h4>
+
+    <h4 style="color: #f2f2f2;">3. If we find something irrelevant then we will delete that confession.</h4>
+
+    <h4 style="color: #f2f2f2;">4. We are not responsible for any consequences.</h4>
+
+
+    <h4 style="color: #f2f2f2;">5. Enjoy your Quarantine with SaytoUTU.</h4>
+    <!-- MADE WITH ❤️ AND ☕ BY-
+    			*Vivek Patel*
+    				LikedIn:- (https://www.linkedin.com/in/vivek-patel-0553731a5/)
+    				Github:- (https://github.com/vivolscute)
+    				
+    			*Niken Goswami* (DDIT Nadiad) 
+    				LikedIn:- (https://www.linkedin.com/in/niken-goswami-6bb231193)
+    				Github:- (https://github.com/nikengoswami)
+    				
+    			*Hunaid Nakhuda*
+    				LikedIn:- (https://www.linkedin.com/in/hunaid-nakhuda-66543b1aa)
+    				Github:-  (https://github.com/hunaid-nakhuda)
+    			Technologies Used- PYTHON3, Pandas , HTML5, CSS3, JAVASCRIPT, PYTHON3, GOOGLE SHEETS , Github
+      -->

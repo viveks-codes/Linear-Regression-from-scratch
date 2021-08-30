@@ -1,0 +1,179 @@
+/* MADE WITH ❤️ AND ☕ BY-
+*Vivek Patel*
+  LikedIn:- (https://www.linkedin.com/in/vivek-patel-0553731a5/)
+  Github:- (https://github.com/vivolscute)
+  
+*Niken Goswami* (DDIT Nadiad) 
+  LikedIn:- (https://www.linkedin.com/in/niken-goswami-6bb231193)
+  Github:- (https://github.com/nikengoswami)
+  
+*Hunaid Nakhuda*
+  LikedIn:- (https://www.linkedin.com/in/hunaid-nakhuda-66543b1aa)
+  Github:-  (https://github.com/hunaid-nakhuda)
+Technologies Used- PYTHON3, Pandas , HTML5, CSS3, JAVASCRIPT, PYTHON3, GOOGLE SHEETS , Github
+*/
+body {
+  background-color: #2b6777;
+}
+}
+.text-align {
+  margin-top: -3%;
+  margin-bottom: -9%;
+
+  padding: 10%;
+  margin-left: 30%;
+}
+.form-new {
+  margin-right: 18%;
+  margin-left: 9%;
+}
+.register-heading {
+  font-size: 1.8rem;
+  text-overflow: "----";
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7%;
+  margin-top: 3%;
+  white-space: nowrap;
+}
+.register-heading h1 {
+  margin-left: 21%;
+  margin-bottom: 10%;
+  color: #ffffff;
+}
+
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #2b6777;
+  background-color: #c8d8e4;
+  border: 0 none;
+  cursor: pointer;
+  margin-right: 6%;
+  -webkit-border-radius: 5px;
+  color: #2b6777;
+  margin-top: 4%;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+.form__field {
+  font-family: inherit;
+  width: 300px;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: #9c9c9c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "----";
+  font-size: 0.9rem;
+}
+.form_field:placeholder-shown ~ .form_label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.8rem;
+  color: #e8e8e8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "----";
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form_field:focus ~ .form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+h1 {
+  margin: 0 0 0.25em;
+}
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  min-width: 20em;
+  width: auto;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #2b6777;
+  cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #c8d8e4;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #2b6777;
+  background-color: #c8d8e4;
+}
+/* reset input */
+.form_field:required,
+.form_field:invalid {
+  box-shadow: none;
+}
